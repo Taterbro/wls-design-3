@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Waterlight — The Modular Identity</title>
+<style>
+  :root{--blue:#1b2a52;--red:#e8452c;--yellow:#f5d64c;--green:#2f9e63;--grey:#e3e1da;--ink:#141821}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{width:1440px;height:900px;overflow:hidden}
+  body{background:var(--grey);color:var(--ink);font-family:"Helvetica Neue",Arial,sans-serif}
+  .grid{position:absolute;inset:0;display:grid;grid-template-columns:repeat(12,1fr);grid-template-rows:repeat(9,1fr)}
+  .cell{grid-column:1/6;grid-row:1/7;background:var(--blue);color:#fff;padding:56px 48px}
+  .cell .kicker{font-size:13px;letter-spacing:.3em;opacity:.75;margin-bottom:20px}
+  .cell h1{font-size:86px;line-height:.92;font-weight:800;letter-spacing:-.02em}
+  .cell p{margin-top:24px;font-size:22px;line-height:1.5;max-width:440px;opacity:.95}
+  .photo{grid-column:6/13;grid-row:1/6;position:relative;overflow:hidden;background:#5a6572}
+  .photo .sea{position:absolute;inset:0;background:linear-gradient(160deg,#20364d,#4d7a86 60%,#c9b78f)}
+  .bars{grid-column:1/13;grid-row:7/10;display:flex}
+  .bar{flex:1;position:relative;mix-blend-mode:multiply}
+  .b1{background:var(--red)}.b2{background:var(--yellow)}.b3{background:var(--green)}.b4{background:var(--blue)}
+  .b5{background:var(--red);opacity:.85}.b6{background:var(--blue);opacity:.9}
+  .floating{position:absolute;top:64px;right:64px;display:flex;flex-direction:column;gap:14px;align-items:flex-end;z-index:4}
+  .chip{padding:12px 16px;font-weight:700;font-size:14px;letter-spacing:.08em;color:#141821}
+  .c-r{background:var(--red)}.c-y{background:var(--yellow)}.c-bl{background:#fff;color:var(--blue)}
+  .cta{position:absolute;left:48px;bottom:44px;z-index:5;display:flex;gap:14px}
+  .cta .a{background:var(--yellow);color:#141821;font-weight:800;padding:18px 26px;font-size:16px}
+  .cta .b2b{border:2px solid #fff;color:#fff;padding:16px 26px;font-size:16px;font-weight:600}
+  .title{position:absolute;left:48px;bottom:150px;z-index:5;color:#fff;font-size:12px;letter-spacing:.28em;opacity:.8}
+</style>
+</head>
+<body>
+  <div class="grid">
+    <div class="cell">
+      <div class="kicker">INVESTMENT · INDUSTRY · INNOVATION · INFRASTRUCTURE · IMPACT</div>
+      <h1>AFRICA<br>IS NOW</h1>
+      <p>An African-founded global enterprise group, built as one system across eight platforms.</p>
+    </div>
+    <div class="photo"><div class="sea"></div></div>
+    <div class="bars">
+      <div class="bar b1"></div><div class="bar b2"></div><div class="bar b3"></div>
+      <div class="bar b4"></div><div class="bar b5"></div><div class="bar b6"></div>
+    </div>
+  </div>
+  <div class="floating">
+    <div class="chip c-r">WATER</div>
+    <div class="chip c-y">ENERGY</div>
+    <div class="chip c-bl">FOOD</div>
+  </div>
+  <div class="title">WATERLIGHT GROUP — MODULAR SYSTEM v1</div>
+  <div class="cta">
+    <span class="a">BUILD WITH WATERLIGHT</span>
+    <span class="b2b">Partner with us</span>
+  </div>
+</body>
+</html>

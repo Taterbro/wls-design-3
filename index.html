@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Waterlight Group — From Africa to the World. From the World to Africa.</title>
+<meta name="description" content="Waterlight Group is an African-founded global enterprise group that originates, structures, invests in and builds across essential sectors — investment, industry, innovation, infrastructure and impact.">
+<link rel="stylesheet" href="assets/css/main.css">
+<script type="module" src="assets/js/main.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header" id="top">
+  <a class="brand" href="#top" aria-label="Waterlight Group — home">
+    <svg class="mark" viewBox="0 0 40 40" aria-hidden="true">
+      <circle cx="20" cy="20" r="18.5" fill="none" stroke="currentColor" stroke-width="1"/>
+      <path d="M6 24 Q20 12 34 24" fill="none" stroke="currentColor" stroke-width="1.4"/>
+      <path d="M6 27 Q20 15 34 27" fill="none" stroke="currentColor" stroke-width="1" opacity=".55"/>
+      <line x1="20" y1="8" x2="20" y2="32" stroke="currentColor" stroke-width="1.4"/>
+      <circle cx="20" cy="20" r="2.6" fill="currentColor"/>
+    </svg>
+    <span class="brand-name">Waterlight<em>Group</em></span>
+  </a>
+
+  <nav class="site-nav" aria-label="Primary">
+    <a href="#flow">The Group</a>
+    <a href="#pipeline">How We Build</a>
+    <a href="#platforms">Platforms</a>
+    <a href="#footprint">Markets</a>
+    <a href="#restricted">Investors</a>
+    <a href="#insights">Insights</a>
+  </nav>
+
+  <a class="btn btn-primary header-cta" href="#build">Build With Waterlight</a>
+
+  <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav-mobile">
+    <span></span><span></span>
+    <span class="sr-only">Menu</span>
+  </button>
+</header>
+
+<main id="main">
+
+  <!-- FIRST VIEWPORT: the live bridge chart -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="chart" aria-hidden="true">
+      <svg class="chart-svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" role="presentation">
+        <defs>
+          <radialGradient id="glow" cx="58%" cy="46%" r="60%">
+            <stop offset="0%" stop-color="#0e5a6b" stop-opacity=".55"/>
+            <stop offset="100%" stop-color="#051f2b" stop-opacity="0"/>
+          </radialGradient>
+          <marker id="arrow-amber" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M0 0 L10 5 L0 10 z" fill="#e8b23c"/>
+          </marker>
+        </defs>
+
+        <rect width="1600" height="900" fill="#051f2b"/>
+        <rect width="1600" height="900" fill="url(#glow)"/>
+
+        <!-- graticule -->
+        <g class="graticule">
+          <path d="M0 150 H1600 M0 300 H1600 M0 450 H1600 M0 600 H1600 M0 750 H1600"/>
+          <path d="M266 0 V900 M533 0 V900 M800 0 V900 M1066 0 V900 M1333 0 V900"/>
+        </g>
+
+        <!-- graticule coordinates: chart furniture, not a claim of presence -->
+        <g class="coords">
+          <text x="20" y="144">60°N</text>
+          <text x="20" y="294">30°N</text>
+          <text x="20" y="444">0°</text>
+          <text x="20" y="594">30°S</text>
+          <text x="272" y="888">30°W</text>
+          <text x="538" y="888">0°</text>
+          <text x="804" y="888">30°E</text>
+          <text x="1070" y="888">60°E</text>
+        </g>
+
+        <!-- isobaths suggesting depth off-shore Africa -->
+        <g class="isobaths">
+          <path d="M900 250 C1000 300 1040 420 1010 540 C985 640 930 720 880 760"/>
+          <path d="M940 280 C1030 330 1060 430 1035 540 C1012 632 965 700 920 740"/>
+          <path d="M980 315 C1055 360 1080 445 1058 540 C1038 615 998 675 960 712"/>
+        </g>
+
+        <!-- Africa mass (stylised) -->
+        <path class="land" d="M806 236 C868 196 952 190 1016 222 C1074 250 1098 312 1082 378 C1066 446 1100 480 1068 552 C1042 616 994 682 950 726 C916 760 880 744 870 706 C854 648 872 606 850 562 C828 516 790 486 786 428 C782 360 762 278 806 236 Z"/>
+
+        <!-- world nodes -->
+        <g class="nodes">
+          <g class="node" data-status="target"    transform="translate(1330,250)"><circle r="5"/><circle r="11" class="ring"/></g>
+          <g class="node" data-status="target"    transform="translate(1372,470)"><circle r="5"/><circle r="11" class="ring"/></g>
+          <g class="node" data-status="target"    transform="translate(1152,168)"><circle r="5"/><circle r="11" class="ring"/></g>
+          <g class="node" data-status="active"    transform="translate(1290,352)"><circle r="6"/><circle r="13" class="ring"/></g>
+          <g class="node" data-status="project"   transform="translate(560,690)"><circle r="6"/><circle r="13" class="ring"/></g>
+          <g class="node" data-status="project"   transform="translate(470,300)"><circle r="6"/><circle r="13" class="ring"/></g>
+          <g class="node" data-status="active"    transform="translate(880,470)"><circle r="7"/><circle r="15" class="ring"/></g>
+          <g class="node" data-status="established" transform="translate(946,352)"><circle r="8"/><circle r="17" class="ring"/></g>
+          <g class="node" data-status="established" transform="translate(906,606)"><circle r="7"/><circle r="15" class="ring"/></g>
+        </g>
+
+        <!-- routes: world -> africa (amber) and africa -> world (cyan) -->
+        <g class="routes" fill="none">
+          <path class="route out" data-status="target"  d="M946 352 C1130 250 1230 250 1290 352"/>
+          <path class="route out" data-status="target"  d="M946 352 C1120 180 1180 150 1372 470" opacity=".7"/>
+          <path class="route in"  data-status="active"  d="M1330 250 C1150 210 1030 250 946 352"/>
+          <path class="route in"  data-status="active"  d="M1152 168 C1050 190 990 250 946 352"/>
+          <path class="route out" data-status="project" d="M906 606 C780 660 660 690 560 690"/>
+          <path class="route in"  data-status="project" d="M470 300 C620 320 780 400 906 606"/>
+          <path class="route out" data-status="established" d="M946 352 C960 420 930 520 906 606"/>
+        </g>
+
+        <!-- port ticks -->
+        <g class="ports">
+          <rect x="942" y="348" width="8" height="8"/>
+          <rect x="902" y="602" width="8" height="8"/>
+          <rect x="842" y="408" width="7" height="7"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="chart-apparatus" aria-hidden="true">
+      <span class="mono">SHEET&nbsp;WL‑HQ‑001</span>
+      <span class="mono">6°27′N&nbsp;3°23′E</span>
+      <div class="scalebar"><i></i><i></i><i></i><i></i><span class="mono">0&nbsp;·&nbsp;500&nbsp;·&nbsp;1000&nbsp;NM</span></div>
+    </div>
+    <div class="north" aria-hidden="true">
+      <svg viewBox="0 0 30 46"><path d="M15 2 L24 44 L15 34 L6 44 Z"/></svg>
+      <span class="mono">N</span>
+    </div>
+
+    <div class="hero-copy">
+      <h1 id="hero-title" class="display">Africa <br>is&nbsp;Now.</h1>
+      <p class="hero-bridge">From Africa to the World. From the World to Africa.</p>
+      <p class="hero-lede">Waterlight is an African-founded global enterprise group. We originate, structure, invest in and build across essential sectors — investment, industry, innovation, infrastructure and impact.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#build">Build With Waterlight</a>
+        <a class="btn btn-ghost" href="#pipeline">Explore the pipeline</a>
+      </div>
+    </div>
+
+    <div class="legend" role="group" aria-label="Filter footprint by status">
+      <span class="mono legend-title">FOOTPRINT STATUS — SELECT TO ISOLATE</span>
+      <button class="legend-key" data-filter="established" aria-pressed="false">
+        <span class="key key-established"></span>Established operations
+      </button>
+      <button class="legend-key" data-filter="active" aria-pressed="false">
+        <span class="key key-active"></span>Active partnerships
+      </button>
+      <button class="legend-key" data-filter="project" aria-pressed="false">
+        <span class="key key-project"></span>Projects &amp; opportunities
+      </button>
+      <button class="legend-key" data-filter="target" aria-pressed="false">
+        <span class="key key-target"></span>Strategic target markets
+      </button>
+    </div>
+  </section>
+
+  <!-- THE OFFER: two directions -->
+  <section class="flow" id="flow" aria-labelledby="flow-title">
+    <div class="wrap">
+      <h2 id="flow-title" class="section-title">One group, operating in two directions</h2>
+      <p class="section-lede">Waterlight is built as a single architecture that moves capital, technology and projects both ways across the bridge. This is the mechanism a neighbouring group cannot truthfully copy.</p>
+
+      <div class="flow-grid">
+        <article class="flow-col">
+          <h3 class="flow-head"><svg class="dir" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M8.5 3.5L13 8l-4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> From Africa to the World</h3>
+          <ul class="flow-list">
+            <li>Originated projects taken to global capital and markets</li>
+            <li>African industry and technology scaled abroad</li>
+            <li>Essential goods, energy and materials moved to demand</li>
+          </ul>
+        </article>
+        <div class="flow-axis" aria-hidden="true">
+          <span class="mono">AFRICA</span>
+          <svg viewBox="0 0 40 320" preserveAspectRatio="none"><line x1="20" y1="0" x2="20" y2="320"/></svg>
+          <span class="mono">WORLD</span>
+        </div>
+        <article class="flow-col">
+          <h3 class="flow-head"><svg class="dir" viewBox="0 0 16 16" aria-hidden="true"><path d="M14 8H3M7.5 3.5L3 8l4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> From the World to Africa</h3>
+          <ul class="flow-list">
+            <li>Global capital structured into bankable assets</li>
+            <li>Technology and expertise transferred and localised</li>
+            <li>Partnerships anchored where the need is greatest</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE MECHANISM: lifecycle -->
+  <section class="pipeline" id="pipeline" aria-labelledby="pipeline-title">
+    <div class="wrap">
+      <h2 id="pipeline-title" class="section-title">From opportunity to generational value</h2>
+      <p class="section-lede">Every platform runs the same disciplined sequence. Select a stage to see the work it carries.</p>
+
+      <div class="pipeline-body">
+        <ol class="stages" role="tablist" aria-label="Value-creation lifecycle">
+          <li><button role="tab" id="stage-1" aria-controls="stage-panel" aria-selected="true" data-stage="1"><span class="mono">01</span>Identify</button></li>
+          <li><button role="tab" id="stage-2" aria-controls="stage-panel" aria-selected="false" data-stage="2"><span class="mono">02</span>Originate</button></li>
+          <li><button role="tab" id="stage-3" aria-controls="stage-panel" aria-selected="false" data-stage="3"><span class="mono">03</span>Structure</button></li>
+          <li><button role="tab" id="stage-4" aria-controls="stage-panel" aria-selected="false" data-stage="4"><span class="mono">04</span>Mobilize</button></li>
+          <li><button role="tab" id="stage-5" aria-controls="stage-panel" aria-selected="false" data-stage="5"><span class="mono">05</span>Build</button></li>
+          <li><button role="tab" id="stage-6" aria-controls="stage-panel" aria-selected="false" data-stage="6"><span class="mono">06</span>Scale</button></li>
+        </ol>
+        <div class="stage-track" aria-hidden="true"><span class="stage-cursor"></span></div>
+
+        <div class="stage-panel" id="stage-panel" role="tabpanel" aria-labelledby="stage-1" tabindex="0">
+          <p class="stage-index mono" data-out="index">STAGE 01 / 06</p>
+          <h3 class="stage-name" data-out="name">Identify</h3>
+          <p class="stage-text" data-out="text">Scan essential-need markets for demand, gaps and enabling conditions, and qualify what deserves pursuit before a dollar is committed.</p>
+          <dl class="stage-meta">
+            <div><dt class="mono">OUTPUT</dt><dd data-out="output">Qualified opportunity set</dd></div>
+            <div><dt class="mono">DISCIPLINE</dt><dd data-out="discipline">Evidence before ambition</dd></div>
+          </dl>
+        </div>
+
+        <p class="lifecycle-note"><span class="mono">VALUE PATH</span> Opportunity → Investment → Innovation → Infrastructure → Enterprise → Impact → Generational Value</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLATFORMS -->
+  <section class="platforms" id="platforms" aria-labelledby="platforms-title">
+    <div class="wrap">
+      <h2 id="platforms-title" class="section-title">Eight platforms, one mandate</h2>
+      <p class="section-lede">Each platform is a build-and-invest capability, not a category label. Together they cover the essential economy.</p>
+
+      <div class="index-head mono" aria-hidden="true">
+        <span>REF</span><span>PLATFORM</span><span>MANDATE</span><span>SECTOR</span>
+      </div>
+      <ol class="platform-index">
+        <li class="platform-row">
+          <span class="mono pref">01</span>
+          <span class="pname">Water &amp; Smart Infrastructure</span>
+          <span class="pmandate">Reliable water access, from source and treatment to intelligent distribution and monitoring.</span>
+          <span class="psector mono">Water</span>
+        </li>
+        <li class="platform-row">
+          <span class="mono pref">02</span>
+          <span class="pname">Renewable Energy &amp; Integrated Utilities</span>
+          <span class="pmandate">Generation, storage and distribution built around what each geography provides.</span>
+          <span class="psector mono">Energy</span>
+        </li>
+        <li class="platform-row">
+          <span class="mono pref">03</span>
+          <span class="pname">Agriculture &amp; Food Systems</span>
+          <span class="pmandate">Productive land, processing and supply into regional and global demand.</span>
+          <span class="psector mono">Food</span>
+        </li>
+        <li class="platform-row">
+          <span class="mono pref">04</span>
+          <span class="pname">Technology, AI &amp; Digital Infrastructure</span>
+          <span class="pmandate">Data, connectivity and applied intelligence as the layer beneath every other platform.</span>
+          <span class="psector mono">Digital</span>
+        </li>
+        <li class="platform-row">
+          <span class="mono pref">05</span>
+          <span class="pname">Industrial Development &amp; Manufacturing</span>
+          <span class="pmandate">Local production that keeps more of the value chain on the continent.</span>
+          <span class="psector mono">Industry</span>
+        </li>
+        <li class="platform-row">
+          <span class="mono pref">06</span>
+          <span class="pname">Real Estate, Housing &amp; Urban Infrastructure</span>
+          <span class="pmandate">Housing and urban systems for the fastest-growing cities in the world.</span>
+          <span class="psector mono">Urban</span>
+        </li>
+        <li class="platform-row">
+          <span class="mono pref">07</span>
+          <span class="pname">Logistics &amp; Supply Chains</span>
+          <span class="pmandate">Ports, corridors and cold chains that move essential goods without loss.</span>
+          <span class="psector mono">Logistics</span>
+        </li>
+        <li class="platform-row">
+          <span class="mono pref">08</span>
+          <span class="pname">Climate &amp; ESG Solutions</span>
+          <span class="pmandate">Resilience and measurement built into every asset from the first drawing.</span>
+          <span class="psector mono">Climate</span>
+        </li>
+      </ol>
+
+      <div class="flagship">
+        <div class="flagship-mark" aria-hidden="true">
+          <svg viewBox="0 0 120 120">
+            <circle cx="60" cy="60" r="46" fill="none" stroke="currentColor" stroke-width="1"/>
+            <path d="M20 74 Q60 34 100 74" fill="none" stroke="currentColor" stroke-width="1.6"/>
+            <path d="M28 86 Q60 52 92 86" fill="none" stroke="currentColor" stroke-width="1" opacity=".6"/>
+            <line x1="60" y1="24" x2="60" y2="96" stroke="currentColor" stroke-width="1.4"/>
+            <circle cx="60" cy="60" r="5" fill="currentColor"/>
+          </svg>
+        </div>
+        <div class="flagship-copy">
+          <div class="flagship-head">
+            <h3>Intelligent water infrastructure</h3>
+            <span class="tag">Flagship — WSWIS</span>
+          </div>
+          <p>Solar energy feeds source and treatment, smart storage, intelligent distribution, digital monitoring and predictive maintenance — engineered into one system for reliable access.</p>
+          <ol class="wswis-chain" aria-label="WSWIS system chain">
+            <li class="mono">Solar energy</li>
+            <li class="mono">Source &amp; treatment</li>
+            <li class="mono">Smart storage</li>
+            <li class="mono">Intelligent distribution</li>
+            <li class="mono">Digital monitoring</li>
+            <li class="mono">Predictive maintenance</li>
+            <li class="mono">Reliable access</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTPRINT -->
+  <section class="footprint" id="footprint" aria-labelledby="footprint-title">
+    <div class="wrap">
+      <h2 id="footprint-title" class="section-title">A footprint we can prove</h2>
+      <p class="section-lede">Waterlight distinguishes what it operates from what it is pursuing. Nothing is promoted from one status to the next until it is verified.</p>
+
+      <ol class="status-list">
+        <li class="status-item" data-status="established">
+          <span class="key key-established" aria-hidden="true"></span>
+          <h3>Established operations</h3>
+          <p>Sites, entities and activities that are live and evidenced. Specific locations are published once disclosure is approved.</p>
+        </li>
+        <li class="status-item" data-status="active">
+          <span class="key key-active" aria-hidden="true"></span>
+          <h3>Active partnerships</h3>
+          <p>Relationships under way and confirmed by all parties. Named partners appear only with publication permission.</p>
+        </li>
+        <li class="status-item" data-status="project">
+          <span class="key key-project" aria-hidden="true"></span>
+          <h3>Projects &amp; opportunities</h3>
+          <p>Origination and structuring work in progress — the pipeline, stated as projects rather than as presence.</p>
+        </li>
+        <li class="status-item" data-status="target">
+          <span class="key key-target" aria-hidden="true"></span>
+          <h3>Strategic target markets</h3>
+          <p>Markets Waterlight intends to enter. Shown as intent, never as footprint.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- RESTRICTED / DATA ROOM -->
+  <section class="restricted" id="restricted" aria-labelledby="restricted-title">
+    <div class="wrap restricted-wrap">
+      <div class="restricted-copy">
+        <h2 id="restricted-title" class="section-title">Some material stays under seal</h2>
+        <p class="section-lede">Financial models, due-diligence packs and legal structures are not public URLs. Access is authenticated, permissioned and logged.</p>
+        <a class="btn btn-primary" href="#build">Request access as an investor</a>
+      </div>
+      <div class="seal" aria-hidden="true">
+        <svg viewBox="0 0 220 260">
+          <rect x="12" y="12" width="196" height="236" fill="none" stroke="currentColor" stroke-width="1"/>
+          <rect x="24" y="24" width="172" height="212" fill="none" stroke="currentColor" stroke-width="1" opacity=".5"/>
+          <circle cx="110" cy="120" r="46" fill="none" stroke="currentColor" stroke-width="1.4"/>
+          <path d="M92 120 h36 M110 102 v36" stroke="currentColor" stroke-width="1.4"/>
+          <text x="110" y="212" text-anchor="middle" font-family="var(--mono)" font-size="11" fill="currentColor">RESTRICTED</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUILD WITH WATERLIGHT -->
+  <section class="build" id="build" aria-labelledby="build-title">
+    <div class="wrap">
+      <h2 id="build-title" class="section-title">Build With Waterlight</h2>
+      <p class="section-lede">Tell us who you are and the route opens to the right qualification — no generic contact form.</p>
+
+      <form class="route-form" novalidate>
+        <fieldset class="route-roles">
+          <legend class="mono">SELECT YOUR ROUTE</legend>
+          <div class="role-grid">
+            <label class="role"><input type="radio" name="route" value="investor"><span>Investor</span></label>
+            <label class="role"><input type="radio" name="route" value="government"><span>Government</span></label>
+            <label class="role"><input type="radio" name="route" value="fi"><span>Financial institution</span></label>
+            <label class="role"><input type="radio" name="route" value="technology"><span>Technology partner</span></label>
+            <label class="role"><input type="radio" name="route" value="owner"><span>Project owner</span></label>
+            <label class="role"><input type="radio" name="route" value="jv"><span>Joint venture</span></label>
+            <label class="role"><input type="radio" name="route" value="africa"><span>Africa market entry</span></label>
+            <label class="role"><input type="radio" name="route" value="gcc"><span>GCC market entry</span></label>
+          </div>
+        </fieldset>
+
+        <div class="route-fields" data-route-fields hidden>
+          <p class="route-hint" data-out="hint"></p>
+
+          <div class="field-grid">
+            <label class="field"><span>Name</span><input type="text" name="name" autocomplete="name" required></label>
+            <label class="field"><span>Organisation</span><input type="text" name="org" autocomplete="organization" required></label>
+            <label class="field"><span>Email</span><input type="email" name="email" autocomplete="email" required></label>
+            <label class="field"><span>Market focus</span><input type="text" name="market"></label>
+          </div>
+
+          <div class="route-specific"></div>
+
+          <label class="field field-wide"><span>What are you looking to build or place?</span><textarea name="brief" rows="3" required></textarea></label>
+
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">Send route request</button>
+            <span class="form-status" role="status" aria-live="polite"></span>
+          </div>
+          <p class="route-footnote fine">Preview build — submission routes are connected to the group CRM at deployment.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" id="insights">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <span class="brand-name">Waterlight<em>Group</em></span>
+      <p class="footer-tag">Building a sustainable future</p>
+      <p class="footer-lede">Investment · Industry · Innovation · Infrastructure · Impact</p>
+    </div>
+
+    <nav class="footer-col" aria-label="The group">
+      <h3 class="mono">THE GROUP</h3>
+      <a href="#flow">Our story</a>
+      <a href="#flow">Vision &amp; mission</a>
+      <a href="#platforms">Group structure</a>
+      <a href="#footprint">Leadership</a>
+      <a href="#footprint">Governance</a>
+    </nav>
+    <nav class="footer-col" aria-label="Business">
+      <h3 class="mono">BUSINESS</h3>
+      <a href="#platforms">Platforms</a>
+      <a href="#platforms">Companies</a>
+      <a href="#pipeline">Investments</a>
+      <a href="#pipeline">Projects</a>
+      <a href="#platforms">Innovation — WSWIS</a>
+    </nav>
+    <nav class="footer-col" aria-label="Engage">
+      <h3 class="mono">ENGAGE</h3>
+      <a href="#build">Partner with us</a>
+      <a href="#build">Investors</a>
+      <a href="#build">Careers</a>
+      <a href="#build">Media &amp; insights</a>
+      <a href="#build">Contact &amp; global offices</a>
+    </nav>
+  </div>
+
+  <div class="wrap footer-base">
+    <p class="fine">© <span data-year></span> Waterlight Group. Legal entity descriptions and relationships are published only once verified.</p>
+    <p class="fine nonprofit-note">Waterlight Save Initiative is an independent nonprofit development organisation, presented separately from the commercial group.</p>
+  </div>
+</footer>
+
+</body>
+</html>

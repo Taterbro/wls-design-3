@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Waterlight — Category Standard</title>
+<style>
+  :root{--navy:#0b1f33;--gold:#c8a24a;--white:#f7f7f5;--muted:rgba(247,247,245,.72)}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{width:1440px;height:900px;overflow:hidden}
+  body{background:var(--navy);color:var(--white);font-family:Georgia,"Times New Roman",serif}
+  .photo{position:absolute;inset:0;background:
+    radial-gradient(1200px 600px at 70% 10%,rgba(30,60,90,.9),transparent 60%),
+    linear-gradient(180deg,#0b1f33 0%,#123a52 45%,#1c5a6b 70%,#2a4a3a 100%);opacity:.9}
+  .overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,31,51,.94) 0%,rgba(11,31,51,.55) 45%,rgba(11,31,51,.15) 100%)}
+  .nav{position:absolute;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:34px 56px;font-family:Arial,sans-serif;font-size:13px;letter-spacing:.16em;z-index:3}
+  .nav .brand{font-family:Georgia,serif;font-size:22px;letter-spacing:.02em}
+  .nav ul{display:flex;gap:30px;list-style:none;color:var(--muted)}
+  .hero{position:absolute;left:56px;top:230px;width:760px;z-index:3}
+  .hero .kicker{font-family:Arial,sans-serif;font-size:13px;letter-spacing:.3em;color:var(--gold);margin-bottom:24px}
+  .hero h1{font-size:96px;line-height:1.0;font-weight:700;letter-spacing:-.01em}
+  .hero p{margin-top:28px;font-family:Arial,sans-serif;font-size:21px;line-height:1.55;color:var(--muted);max-width:560px}
+  .buttons{margin-top:38px;display:flex;gap:16px;font-family:Arial,sans-serif}
+  .buttons .a{background:var(--gold);color:#0b1f33;font-weight:700;padding:18px 30px;font-size:15px}
+  .buttons .b{border:1px solid rgba(247,247,245,.5);padding:18px 30px;font-size:15px;color:var(--white)}
+  .stats{position:absolute;left:56px;bottom:64px;display:flex;gap:52px;z-index:3;font-family:Arial,sans-serif}
+  .stats div b{display:block;font-family:Georgia,serif;font-size:40px;color:var(--gold)}
+  .stats div span{font-size:12px;letter-spacing:.18em;color:var(--muted)}
+  .cards{position:absolute;right:56px;bottom:64px;display:grid;grid-template-columns:repeat(3,150px);gap:14px;z-index:3;font-family:Arial,sans-serif}
+  .cards .c{border:1px solid rgba(247,247,245,.22);background:rgba(11,31,51,.55);padding:16px;font-size:13px;line-height:1.4}
+  .cards .c .ic{width:22px;height:22px;border:1px solid var(--gold);margin-bottom:12px}
+</style>
+</head>
+<body>
+  <div class="photo"></div><div class="overlay"></div>
+  <nav class="nav">
+    <div class="brand">Waterlight Group</div>
+    <ul><li>About</li><li>Platforms</li><li>Investments</li><li>Projects</li><li>Impact</li><li>Contact</li></ul>
+  </nav>
+  <div class="hero">
+    <div class="kicker">BUILDING A SUSTAINABLE FUTURE</div>
+    <h1>An African-Founded<br>Global Enterprise</h1>
+    <p>Investment · Industry · Innovation · Infrastructure · Impact. From Africa to the World, from the World to Africa.</p>
+    <div class="buttons">
+      <span class="a">BUILD WITH WATERLIGHT</span>
+      <span class="b">Discover the group</span>
+    </div>
+  </div>
+  <div class="stats">
+    <div><b>08</b><span>PLATFORMS</span></div>
+    <div><b>05</b><span>SECTORS</span></div>
+    <div><b>4</b><span>FOOTPRINT STATES</span></div>
+  </div>
+  <div class="cards">
+    <div class="c"><div class="ic"></div>Water &amp; Infrastructure</div>
+    <div class="c"><div class="ic"></div>Energy &amp; Utilities</div>
+    <div class="c"><div class="ic"></div>Agriculture &amp; Food</div>
+    <div class="c"><div class="ic"></div>Technology &amp; AI</div>
+    <div class="c"><div class="ic"></div>Industry</div>
+    <div class="c"><div class="ic"></div>Real Estate</div>
+  </div>
+</body>
+</html>

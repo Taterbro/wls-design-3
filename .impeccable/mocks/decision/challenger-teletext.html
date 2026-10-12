@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Waterlight — The Index Terminal</title>
+<style>
+  :root{--bg:#000000;--white:#ffffff;--yellow:#ffff00;--cyan:#00c8ff;--green:#00c000;--red:#ff4040}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{width:1440px;height:900px;overflow:hidden}
+  body{background:var(--bg);color:var(--white);font-family:"Courier New",monospace}
+  .wrap{position:absolute;inset:26px;border:1px solid #333}
+  .bar{display:flex;justify-content:space-between;background:#0000c0;color:#fff;padding:10px 16px;font-size:18px;font-weight:700;letter-spacing:.05em}
+  .bar .pg{color:var(--yellow)}
+  .body{padding:20px 16px;display:grid;grid-template-columns:1fr 460px;gap:26px}
+  .idx{font-size:20px;line-height:1.7}
+  .idx .row{display:grid;grid-template-columns:64px 1fr 160px;gap:12px;padding:6px 0;border-bottom:1px dashed #2a2a2a}
+  .idx .num{color:var(--cyan)}
+  .idx .h{color:var(--yellow);font-weight:700;letter-spacing:.04em}
+  .idx .s{color:var(--green)}
+  .idx .row.urgent .s{color:var(--red)}
+  .hero{padding:18px;border:1px solid #333}
+  .hero .big{color:var(--yellow);font-size:30px;fat-weight:700;letter-spacing:.02em;margin-bottom:10px}
+  .hero .sub{font-size:16px;color:var(--white);line-height:1.5}
+  .hero .blocks{margin-top:22px;display:grid;grid-template-columns:repeat(12,1fr);grid-template-rows:repeat(6,16px);gap:3px}
+  .blocks i{background:var(--cyan);display:block}
+  .blocks i.o{background:#0e2a47}
+  .reveal{margin-top:22px;border:2px solid var(--red);color:var(--red);padding:12px 18px;font-size:16px;font-weight:700;letter-spacing:.08em;display:inline-block}
+  .foot{position:absolute;left:42px;bottom:40px;font-size:13px;color:#666;letter-spacing:.1em}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="bar"><span>WATERLIGHT GROUP INDEX</span><span class="pg">P100 · 1/9</span></div>
+    <div class="body">
+      <div class="idx">
+        <div class="row"><span class="num">101</span><span class="h">THE INVESTMENT THESIS</span><span class="s">AFRICA IS NOW</span></div>
+        <div class="row"><span class="num">102</span><span>Water &amp; Smart Infrastructure</span><span class="s">PLATFORM</span></div>
+        <div class="row"><span class="num">103</span><span>Renewable Energy &amp; Utilities</span><span class="s">PLATFORM</span></div>
+        <div class="row"><span class="num">104</span><span>Agriculture &amp; Food Systems</span><span class="s">PLATFORM</span></div>
+        <div class="row"><span class="num">105</span><span>Technology, AI &amp; Digital Infra</span><span class="s">PLATFORM</span></div>
+        <div class="row"><span class="num">106</span><span>Industrial Development</span><span class="s">PLATFORM</span></div>
+        <div class="row"><span class="num">107</span><span>Real Estate &amp; Urban Infra</span><span class="s">PLATFORM</span></div>
+        <div class="row"><span class="num">108</span><span>Logistics &amp; Supply Chains</span><span class="s">PLATFORM</span></div>
+        <div class="row"><span class="num">109</span><span>Climate &amp; ESG Solutions</span><span class="s">PLATFORM</span></div>
+        <div class="row urgent"><span class="num">200</span><span>RESTRICTED — INVESTOR DATA ROOM</span><span class="s">REQUEST ACCESS</span></div>
+      </div>
+      <div class="hero">
+        <div class="big">P101 — AFRICA IS NOW</div>
+        <div class="sub">From Africa to the World. From the World to Africa. Eight platforms, one operating architecture.</div>
+        <div class="blocks">
+          <i></i><i></i><i></i><i class="o"></i><i></i><i></i><i class="o"></i><i></i><i class="o"></i><i></i><i></i><i></i>
+          <i class="o"></i><i></i><i></i><i></i><i class="o"></i><i></i><i></i><i></i><i></i><i class="o"></i><i></i><i class="o"></i>
+          <i></i><i></i><i class="o"></i><i></i><i></i><i></i><i class="o"></i><i></i><i></i><i></i><i class="o"></i><i></i>
+          <i></i><i class="o"></i><i></i><i></i><i></i><i class="o"></i><i></i><i></i><i></i><i class="o"></i><i></i><i></i>
+          <i class="o"></i><i></i><i></i><i></i><i></i><i></i><i class="o"></i><i></i><i></i><i></i><i></i><i class="o"></i>
+          <i></i><i></i><i class="o"></i><i></i><i class="o"></i><i></i><i></i><i class="o"></i><i></i><i></i><i></i><i></i>
+        </div>
+        <div class="reveal">▶ REVEAL: BUILD WITH WATERLIGHT</div>
+      </div>
+    </div>
+  </div>
+  <div class="foot">KEY 200–299 FOR RESTRICTED · HOLD SUBPAGE TO KEEP · SCHEMATIC INDEX</div>
+</body>
+</html>

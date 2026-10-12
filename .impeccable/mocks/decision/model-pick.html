@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Waterlight — The Bridge Chart</title>
+<style>
+  :root{--deep:#071b2c;--sea:#0d3b52;--amber:#e7b84b;--bone:#f2ede2;--line:rgba(242,237,226,.22)}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{width:1440px;height:900px;overflow:hidden}
+  body{background:var(--deep);color:var(--bone);font-family:"Helvetica Neue",Arial,sans-serif}
+  .graticule{position:absolute;inset:0;opacity:.5;
+    background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
+    background-size:80px 80px}
+  .frame{position:absolute;inset:28px;border:1px solid var(--line)}
+  .topbar{position:absolute;top:44px;left:44px;right:44px;display:flex;justify-content:space-between;font-size:12px;letter-spacing:.22em;color:rgba(242,237,226,.7)}
+  .head{position:absolute;left:64px;top:130px;width:620px;z-index:3}
+  .head .kicker{font-size:13px;letter-spacing:.34em;color:var(--amber);margin-bottom:20px}
+  .head h1{font-size:104px;line-height:.92;font-weight:800;letter-spacing:-.02em}
+  .head p{margin-top:26px;font-size:24px;line-height:1.5;max-width:560px;color:rgba(242,237,226,.92)}
+  .cta{position:absolute;left:64px;bottom:120px;display:flex;gap:16px;align-items:center;z-index:3}
+  .btn{background:var(--amber);color:#071b2c;font-weight:800;letter-spacing:.06em;font-size:16px;padding:18px 26px}
+  .ghost{border:1px solid var(--line);color:var(--bone);font-size:16px;padding:18px 26px;letter-spacing:.04em}
+  .legend{position:absolute;right:44px;bottom:88px;width:300px;z-index:3;
+    border:1px solid var(--line);background:rgba(7,27,44,.72);padding:18px 20px}
+  .legend h4{font-size:11px;letter-spacing:.26em;color:var(--amber);margin-bottom:14px}
+  .legend .l{display:flex;align-items:center;gap:12px;font-size:14px;margin:10px 0;color:rgba(242,237,226,.9)}
+  .dot{width:11px;height:11px;border-radius:50%}
+  .d1{background:var(--amber)}.d2{background:#7fd0e0}.d3{background:#e7b84b;outline:1px dashed var(--amber);outline-offset:2px}.d4{background:transparent;border:1px solid rgba(242,237,226,.6)}
+  .map{position:absolute;inset:0}
+  .footer{position:absolute;left:44px;bottom:40px;font-size:11px;letter-spacing:.2em;color:rgba(242,237,226,.45)}
+</style>
+</head>
+<body>
+  <div class="map">
+    <svg viewBox="0 0 1440 900" width="1440" height="900" preserveAspectRatio="none">
+      <rect width="1440" height="900" fill="#071b2c"/>
+      <g stroke="rgba(242,237,226,.06)" stroke-width="1">
+        <path d="M0 180 H1440 M0 360 H1440 M0 540 H1440 M0 720 H1440"/>
+        <path d="M200 0 V900 M480 0 V900 M760 0 V900 M1040 0 V900 M1300 0 V900"/>
+      </g>
+      <!-- simplified Africa mass, right-of-centre -->
+      <path d="M760 250 C820 210 900 205 960 235 C1010 260 1030 315 1015 375 C1000 440 1030 470 1000 540 C975 600 930 660 890 700 C860 730 830 715 820 680 C805 625 820 585 800 545 C780 500 745 470 742 415 C738 350 720 290 760 250 Z"
+            fill="#0d3b52" stroke="rgba(242,237,226,.35)" stroke-width="1.2"/>
+      <!-- route arcs -->
+      <g fill="none" stroke="#e7b84b" stroke-width="1.6">
+        <path d="M905 335 C1130 250 1290 300 1380 250" opacity=".9"/>
+        <path d="M900 470 C1080 520 1180 430 1300 470" opacity=".75"/>
+      </g>
+      <g fill="none" stroke="#7fd0e0" stroke-width="1.4" stroke-dasharray="4 5">
+        <path d="M905 335 C950 200 1010 120 1120 90" opacity=".8"/>
+        <path d="M900 470 C760 520 640 600 560 700" opacity=".7"/>
+      </g>
+      <!-- nodes -->
+      <g>
+        <circle cx="905" cy="335" r="7" fill="#e7b84b"/>
+        <circle cx="900" cy="470" r="6" fill="#7fd0e0"/>
+        <circle cx="1090" cy="205" r="5" fill="#e7b84b"/>
+        <circle cx="1290" cy="300" r="5" fill="#e7b84b"/>
+        <circle cx="1380" cy="250" r="5" fill="none" stroke="#f2ede2"/>
+        <circle cx="560" cy="700" r="5" fill="none" stroke="#f2ede2"/>
+      </g>
+    </svg>
+  </div>
+  <div class="graticule"></div>
+  <div class="frame"></div>
+
+  <div class="topbar"><span>WATERLIGHT GROUP</span><span>GLOBAL FOOTPRINT · LIVE MAP</span></div>
+
+  <div class="head">
+    <div class="kicker">AFRICA IS NOW</div>
+    <h1>THE<br>BRIDGE</h1>
+    <p>One group, two directions of flow — capital, technology and projects moving From Africa to the World and From the World to Africa.</p>
+  </div>
+
+  <div class="cta">
+    <span class="btn">BUILD WITH WATERLIGHT</span>
+    <span class="ghost">Explore the pipeline</span>
+  </div>
+
+  <div class="legend">
+    <h4>FOOTPRINT STATUS</h4>
+    <div class="l"><span class="dot d1"></span> Established operations</div>
+    <div class="l"><span class="dot d2"></span> Active partnerships</div>
+    <div class="l"><span class="dot d3"></span> Projects &amp; opportunities</div>
+    <div class="l"><span class="dot d4"></span> Strategic target markets</div>
+  </div>
+  <div class="footer">CHART WL-001 · SCHEMATIC — TARGET MARKETS DISTINGUISHED FROM FOOTPRINT</div>
+</body>
+</html>

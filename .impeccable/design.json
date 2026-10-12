@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-09T19:45:00Z",
+  "title": "Design System: Waterlight Group",
+  "extensions": {
+    "colorMeta": {
+      "abyss": { "role": "neutral", "displayName": "Abyss", "canonical": "#021119", "tonalRamp": ["#010a0e", "#021119", "#03202b", "#04303d", "#054150", "#065263", "#0a6d82", "#0e8598"] },
+      "ocean": { "role": "neutral", "displayName": "Ocean", "canonical": "#051f2b", "tonalRamp": ["#021119", "#041a25", "#051f2b", "#082f3e", "#0e4a5a", "#14667a", "#1a8397", "#3fb0c4"] },
+      "deep": { "role": "neutral", "displayName": "Deep", "canonical": "#082f3e", "tonalRamp": ["#03151d", "#051f2b", "#082f3e", "#0b4053", "#0e5268", "#12667f", "#167c98", "#1a93ab"] },
+      "sea": { "role": "neutral", "displayName": "Sea", "canonical": "#0e5a6b", "tonalRamp": ["#03151a", "#082f39", "#0e5a6b", "#127a8e", "#1a8397", "#2fa3b8", "#5cc1d3", "#8fd8e5"] },
+      "shoal": { "role": "neutral", "displayName": "Shoal", "canonical": "#1a8397", "tonalRamp": ["#0b2a30", "#114150", "#166074", "#1a8397", "#2aa0b4", "#48bdcd", "#7fd2de", "#b3e7ef"] },
+      "shoal-text": { "role": "neutral", "displayName": "Shoal Text", "canonical": "#5fc2d6", "tonalRamp": ["#0b2a30", "#124957", "#1a6a7e", "#2a93a8", "#47b0c4", "#5fc2d6", "#8dd3e2", "#bfe6ef"] },
+      "bone": { "role": "neutral", "displayName": "Chart Bone", "canonical": "#f0ebdf", "tonalRamp": ["#3a3833", "#5c594f", "#7d786c", "#a29c8d", "#c4bdac", "#ddd6c7", "#f0ebdf", "#faf7f0"] },
+      "bone-2": { "role": "neutral", "displayName": "Bone 82", "canonical": "rgba(240,235,223,.82)", "tonalRamp": ["#3a3833", "#5c594f", "#7d786c", "#a29c8d", "#c4bdac", "#ddd6c7", "#f0ebdf", "#faf7f0"] },
+      "bone-3": { "role": "neutral", "displayName": "Bone 70", "canonical": "rgba(240,235,223,.7)", "tonalRamp": ["#3a3833", "#5c594f", "#7d786c", "#a29c8d", "#c4bdac", "#ddd6c7", "#f0ebdf", "#faf7f0"] },
+      "amber": { "role": "primary", "displayName": "Route Amber", "canonical": "#e8b23c", "tonalRamp": ["#3d2f0f", "#6e5615", "#a07d1c", "#c99a2c", "#e8b23c", "#f0c45f", "#f5d489", "#fae3b6"] },
+      "cyan": { "role": "secondary", "displayName": "Signal Cyan", "canonical": "#69cddd", "tonalRamp": ["#0b2a30", "#114f59", "#1a7686", "#2aa0b4", "#48bdcd", "#69cddd", "#93dde8", "#c2eef4"] },
+      "coral": { "role": "tertiary", "displayName": "Verification Coral", "canonical": "#e0674c", "tonalRamp": ["#3a1810", "#6a2b1c", "#9a3f28", "#c25037", "#e0674c", "#ea856e", "#f0a591", "#f6c8ba"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "The h1 thesis only, uppercase Archivo 800." },
+      "headline": { "displayName": "Headline", "purpose": "Section titles (h2)." },
+      "title": { "displayName": "Title", "purpose": "Card and sub-section headings (h3)." },
+      "body": { "displayName": "Body", "purpose": "Running text, measures capped 44-56ch." },
+      "editorial": { "displayName": "Editorial", "purpose": "One warm serif line of voice, max 24ch." },
+      "label": { "displayName": "Label / Mono", "purpose": "Coordinates, references, ordinals, sector tags, column headers." }
+    },
+    "shadows": [
+      { "name": "selected-state-ring", "value": "0 0 0 3px rgba(232,178,60,.25)", "purpose": "Marks the active legend filter key; the only shadow in the system." }
+    ],
+    "motion": [
+      { "name": "ease-standard", "value": "cubic-bezier(0.2,0.8,0.2,1)", "purpose": "Reveal and route-draw easing." },
+      { "name": "ease-state", "value": "ease", "purpose": "Hover/focus color and background transitions (0.18-0.2s)." },
+      { "name": "reveal", "value": "0.7s", "purpose": "Section reveal: opacity plus 18px translateY from an already-visible default." }
+    ],
+    "breakpoints": [
+      { "name": "lg", "value": "1080px" },
+      { "name": "md", "value": "860px" },
+      { "name": "sm", "value": "620px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Primary action (e.g. Send route request); Route Amber fill, square corners.",
+      "html": "<button class=\"ds-btn-primary\">Send route request</button>",
+      "css": ".ds-btn-primary{display:inline-flex;align-items:center;gap:.55em;font-family:var(--sans);font-weight:600;font-size:.92rem;letter-spacing:.02em;background:var(--amber);color:var(--abyss);padding:.95em 1.5em;border:1px solid transparent;border-radius:0;cursor:pointer;transition:background .2s ease,transform .2s ease}.ds-btn-primary:hover{background:#f4c257;transform:translateY(-1px)}.ds-btn-primary:active{transform:none}.ds-btn-primary:focus-visible{outline:2px solid var(--amber);outline-offset:3px}"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Secondary action; hairline border that firms to full bone on hover.",
+      "html": "<a class=\"ds-btn-ghost\" href=\"#pipeline\">Explore the pipeline</a>",
+      "css": ".ds-btn-ghost{display:inline-flex;align-items:center;gap:.55em;font-family:var(--sans);font-weight:600;font-size:.92rem;letter-spacing:.02em;color:var(--bone);background:transparent;border:1px solid var(--line-2);border-radius:0;padding:.95em 1.5em;cursor:pointer;transition:background .2s ease,color .2s ease,border-color .2s ease;text-decoration:none}.ds-btn-ghost:hover{border-color:var(--bone);background:rgba(240,235,223,.05)}.ds-btn-ghost:focus-visible{outline:2px solid var(--amber);outline-offset:3px}"
+    },
+    {
+      "name": "Route Role Chip",
+      "kind": "chip",
+      "refersTo": "route-role",
+      "description": "Square radio cell in the Build With Waterlight route selector; the label is the target.",
+      "html": "<label class=\"ds-role\"><input type=\"radio\" name=\"route\"><span>Investor</span></label>",
+      "css": ".ds-role{position:relative;display:block;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}.ds-role input{position:absolute;inset:0;opacity:0;cursor:pointer}.ds-role span{display:block;padding:1.05rem 1rem;font-family:var(--sans);font-size:.9rem;font-weight:600;color:var(--bone-2);transition:background .18s ease,color .18s ease}.ds-role:hover span{color:var(--bone);background:rgba(240,235,223,.04)}.ds-role input:checked+span{background:var(--amber);color:var(--abyss)}.ds-role input:focus-visible+span{outline:2px solid var(--amber);outline-offset:-2px}"
+    },
+    {
+      "name": "Data Tag",
+      "kind": "chip",
+      "refersTo": "data-tag",
+      "description": "Pill identifier (e.g. Flagship - WSWIS); cyan, never used as a heading kicker.",
+      "html": "<span class=\"ds-tag\">Flagship - WSWIS</span>",
+      "css": ".ds-tag{display:inline-block;font-family:var(--sans);font-size:.72rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--cyan);border:1px solid rgba(105,205,221,.45);padding:.34em .72em;border-radius:999px;white-space:nowrap}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "field-input",
+      "description": "Square input on a sunk ocean ground; border shifts to amber on focus.",
+      "html": "<label class=\"ds-field\"><span>Email</span><input type=\"email\" placeholder=\"you@company.com\"></label>",
+      "css": ".ds-field{display:flex;flex-direction:column;gap:.5rem}.ds-field>span{font-family:var(--sans);font-size:.82rem;color:var(--bone-2);letter-spacing:.02em}.ds-field input{background:rgba(2,17,25,.6);border:1px solid var(--line-2);color:var(--bone);padding:.8em .9em;border-radius:0;width:100%;font:inherit;transition:border-color .18s ease,background .18s ease}.ds-field input::placeholder{color:var(--bone-3)}.ds-field input:focus{outline:none;border-color:var(--amber);background:rgba(2,17,25,.85)}"
+    },
+    {
+      "name": "Legend Key",
+      "kind": "custom",
+      "refersTo": "route-role",
+      "description": "Filter control on the hero chart; active state carries the system's only shadow (a zero-offset ring).",
+      "html": "<button class=\"ds-legend-key\" aria-pressed=\"true\"><span class=\"ds-key\"></span>Established operations</button>",
+      "css": ".ds-legend-key{display:flex;align-items:center;gap:.7rem;width:100%;padding:.5rem .3rem;background:none;border:none;border-top:1px solid var(--line);color:var(--bone-2);font-family:var(--sans);font-size:.9rem;text-align:left;cursor:pointer;transition:color .18s ease,background .18s ease}.ds-legend-key:hover{color:var(--bone);background:rgba(240,235,223,.04)}.ds-legend-key[aria-pressed=\"true\"]{color:var(--bone)}.ds-key{width:14px;height:14px;flex:none;border-radius:50%;display:inline-block;background:var(--amber)}.ds-legend-key[aria-pressed=\"true\"] .ds-key{box-shadow:0 0 0 3px rgba(232,178,60,.25)}"
+    },
+    {
+      "name": "Nav Link",
+      "kind": "nav",
+      "refersTo": "data-tag",
+      "description": "Header link; 1px amber underline wipes in from the left on hover.",
+      "html": "<a class=\"ds-nav-link\" href=\"#platforms\">Platforms</a>",
+      "css": ".ds-nav-link{position:relative;font-family:var(--sans);font-size:.85rem;color:var(--bone-2);padding:.2em 0;text-decoration:none;transition:color .18s ease}.ds-nav-link::after{content:\"\";position:absolute;left:0;right:100%;bottom:-2px;height:1px;background:var(--amber);transition:right .22s ease}.ds-nav-link:hover{color:var(--bone)}.ds-nav-link:hover::after{right:0}.ds-nav-link:focus-visible{outline:2px solid var(--amber);outline-offset:3px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Bridge Chart",
+    "overview": "Waterlight Group is presented as a working navigation chart rather than a brochure. The visitor is a senior external decision-maker who does not yet know the group; the interface has to read as an instrument - precise, evidenced, operational - in the first screen, not as a campaign. The surface is built from the marks of a sea chart: a deep-ocean ink ground, hairline graticule and isobaths, a live two-way route network, a scale bar, a north arrow, sheet references and a filterable legend. The system is flat by conviction: depth comes from layered dark fields and 1px hairlines, never from shadow, glass or gradient ornament. Type carries the hierarchy - a monumental condensed uppercase display for the thesis, a warm serif for the one editorial voice, and monospace reserved strictly for measurements, coordinates, references and ordinals. Two data inks, amber and cyan, encode the group's two operating directions and are deliberately rare.",
+    "keyCharacteristics": [
+      "Deep-ocean ink ground with chart-bone text; no light mode.",
+      "Flat surfaces, hairline rules, zero decorative shadow or blur.",
+      "Two-ink data accent system (amber / cyan) at low surface coverage.",
+      "Monospace confined to data, coordinates, references and ordinals.",
+      "Live, filterable route network as the signature instrument.",
+      "Evidence-first copy: intent distinguished from verified footprint."
+    ],
+    "rules": [
+      { "name": "The Two-Ink Rule", "body": "Amber and cyan are data, not decoration. Amber means Africa to World and primary action; cyan means World to Africa and live system signal. Each stays under roughly 5% of any screen.", "section": "colors" },
+      { "name": "The Cold-Ground Rule", "body": "The ground is always a petrol-tinted dark. Warm cream or light grounds are forbidden.", "section": "colors" },
+      { "name": "The Chart-Label Rule", "body": "Monospace is for code, data, coordinates, references and ordinals. It is never used for editorial or interface prose.", "section": "typography" },
+      { "name": "The One-Serif Rule", "body": "Spectral appears for one line of editorial voice only; it is not a second body face.", "section": "typography" },
+      { "name": "The Flat-Chart Rule", "body": "Surfaces are flat at rest. No drop shadows, no glass, no backdrop-filter; depth is tonal layering plus hairlines.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do keep the ground a petrol-tinted dark and text in Chart Bone / Bone-2 / Bone-3.",
+      "Do reserve amber for the Africa to World direction and primary action, and cyan for World to Africa and live data; keep each scarce.",
+      "Do use monospace only for coordinates, references, ordinals, sector tags and measurements.",
+      "Do separate structure with 1px hairlines and 2px accent header rules, and keep all surfaces flat.",
+      "Do distinguish verified footprint from target markets, and mark unverifiable material as intent or schematic."
+    ],
+    "donts": [
+      "Don't place a kicker or eyebrow label above a heading.",
+      "Don't use drop shadows, glass or backdrop-filter, or gradient fills as ornament.",
+      "Don't add colored border-left/border-right above 1px to cards or callouts.",
+      "Don't use a light or warm-cream ground, or a system display face in place of Archivo.",
+      "Don't use Unicode glyphs or emoji as icons; draw icons as inline SVG in one stroke weight.",
+      "Don't reproduce the corporate template - full-bleed photo hero, stat row, or same-size icon-card grid."
+    ]
+  }
+}

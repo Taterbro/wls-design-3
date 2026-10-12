@@ -1,0 +1,125 @@
+{
+  "title": "Choose the visual world",
+  "question": "The roll assigned The Drawing Set. Keep it, take an alternate, or re-roll.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "The Drawing Set",
+      "kicker": "THE ROLL",
+      "lineage": "civil engineering working drawings",
+      "thesis": "The group presented as one drawn set: every sector a drafted assembly, every stage a construction phase.",
+      "palette": ["#0e2a47", "#f4f1e9", "#b23b2e", "#6b7a86"],
+      "materials": ["drafting sheet", "single structural ink line-work"],
+      "viewport": "One continuous drawing sheet: the investment thesis set as the sheet title, the Africa-to-World mechanism drawn in section, and a stamped primary action inside the title block.",
+      "risk": "Reads cold and technical if the content is thin; must never fall into literal blueprint-cyan.",
+      "raised": [
+        { "from": "alphabet-storm", "raise": "One continuous sheet owns the whole first viewport, never boxed sections." },
+        { "from": "lowbrow-gallery", "raise": "Total coverage: every surface is drafting material, no neutral filler left anywhere." },
+        { "from": "hypercard-stack", "raise": "Addressability: every sheet number and annotation is a real deep link, navigable like an index." }
+      ],
+      "html": ".impeccable/mocks/decision/assigned.html"
+    },
+    {
+      "id": "model-pick",
+      "label": "The Bridge Chart",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "nautical and trade-route cartography",
+      "thesis": "The Africa-to-World bridge as a working chart: ports, routes, and the four footprint states as a live legend.",
+      "palette": ["#071b2c", "#0d3b52", "#e7b84b", "#f2ede2"],
+      "materials": ["chart ink", "graticule", "route arcs"],
+      "viewport": "A live two-way route chart over a deep-ocean ground, the investment thesis set top-left, a footprint-state legend bottom-right.",
+      "risk": "This is where most runs in the category land; a map reads decorative when the underlying data is thin.",
+      "html": ".impeccable/mocks/decision/model-pick.html"
+    },
+    {
+      "id": "challenger-modular-identity",
+      "label": "The Modular Identity",
+      "verdict": "competitive",
+      "lineage": "modular identity programs (photography + hard vector bars)",
+      "thesis": "The multi-entity group as one modular system: photographed reality locking into a strict block grid.",
+      "palette": ["#1b2a52", "#e8452c", "#f5d64c", "#2f9e63"],
+      "materials": ["saturated blocks", "photographic panels", "multiply overlap"],
+      "viewport": "A photographic panel overrun by saturated colour bars that snap to an invisible module, the group name in a neutral grotesque.",
+      "case": "Fuses well: the eight platforms and five entities map cleanly to modules, and overlapping bars produce the system's own secondary colours. Loses on institutional quiet.",
+      "risk": "Loud saturated blocks read gimmicky at institutional scale.",
+      "html": ".impeccable/mocks/decision/challenger-modular-identity.html"
+    },
+    {
+      "id": "challenger-daylight-section",
+      "label": "The Daylight Section",
+      "verdict": "competitive",
+      "lineage": "architectural section with live solar path",
+      "thesis": "The group's impact shown as one building section, with daylight computing across it hour by hour.",
+      "palette": ["#e9e2d5", "#2b2b28", "#e0a83c", "#5a6e86"],
+      "materials": ["limewash", "section poche", "travelling sun band"],
+      "viewport": "One long section, rooms cut in charcoal poche, a gold sun band crossing as the active element, solar time stamped beneath.",
+      "case": "Fuses: sustainability becomes a live computation rather than a claim. Loses the investment mechanism to a domestic, human scale.",
+      "risk": "Human-scale warmth can undersell an investment mandate.",
+      "html": ".impeccable/mocks/decision/challenger-daylight-section.html"
+    },
+    {
+      "id": "challenger-teletext",
+      "label": "The Index Terminal",
+      "verdict": "competitive",
+      "lineage": "broadcast teletext magazine",
+      "thesis": "The group as a broadcast index: platforms and markets as numbered pages in a strict cell grid.",
+      "palette": ["#0000c0", "#ffff00", "#00c8ff", "#ff4040"],
+      "materials": ["block mosaic", "fixed cell grid"],
+      "viewport": "A P100 index page, platforms as numbered rows, the thesis in a block-mosaic panel, a REVEAL state over the restricted data room.",
+      "case": "Fuses: a numbered index is instantly legible and a REVEAL state fits gated investor material. Loses warmth and audience identification.",
+      "risk": "Reads retro-novelty when the grid is not held strictly.",
+      "html": ".impeccable/mocks/decision/challenger-teletext.html"
+    },
+    {
+      "id": "challenger-alphabet-storm",
+      "label": "The Alphabet Storm",
+      "verdict": "declined",
+      "lineage": "surreal letter-weather worlds",
+      "thesis": "Grammar becomes weather that reshapes the landscape.",
+      "palette": ["#f4f4ef", "#0b0b0b", "#c9ccd1"],
+      "materials": ["paper white", "storm-letter ink", "silver flash"],
+      "viewport": "Letters condensing into a word, then breaking into rain.",
+      "case": "Fuses poorly: institutional financiers do not identify with surreal type-weather, and it hides the offer.",
+      "risk": "Illegible for the audience it must convince.",
+      "kept": "Total environmental commitment: one field, no boxed sections."
+    },
+    {
+      "id": "challenger-lowbrow-gallery",
+      "label": "The Lacquer Panel",
+      "verdict": "declined",
+      "lineage": "lowbrow hot-rod gallery panels",
+      "thesis": "Every element packed into one outlined, lacquered tableau.",
+      "palette": ["#d1352b", "#f2b134", "#2ba7a0", "#111111"],
+      "materials": ["airbrushed lacquer", "heavy black outline"],
+      "viewport": "Figures at competing scales held by black outlines across the whole board.",
+      "case": "Fuses poorly: no audience identification for an investment group and the crowding hides the offer.",
+      "risk": "Reads as novelty, not institution.",
+      "kept": "Total surface coverage: one edge system holds every element, no unpainted ground."
+    },
+    {
+      "id": "challenger-hypercard-stack",
+      "label": "The Card Stack",
+      "verdict": "declined",
+      "lineage": "HyperCard shoebox stacks",
+      "thesis": "The group as a stack of linked cards you can also author.",
+      "palette": ["#ffffff", "#111111", "#8f8f8f"],
+      "materials": ["one-bit stipple", "painted buttons"],
+      "viewport": "A black-and-white card with hand-painted buttons, back retracing your trail.",
+      "case": "Fuses poorly: the one-bit nostalgic aesthetic undercuts 'modern, trustworthy, global', and browse/author duality confuses a public gateway.",
+      "risk": "Signals retro software, not institutional scale.",
+      "kept": "Addressability: every content unit is a deep link with an exact trail back."
+    }
+  ],
+  "reroll": { "registers": ["safer", "bolder"] },
+  "buildPath": { "value": "code", "toggle": false },
+  "canon": true,
+  "canonCard": {
+    "label": "The category standard",
+    "thesis": "What this category ships, executed impeccably.",
+    "palette": ["#0b1f33", "#c8a24a", "#f7f7f5"],
+    "materials": ["full-bleed photography", "clean grid", "serif display"],
+    "viewport": "Dark photographic hero, the promise set large in serif, a stat row, a sector-card grid, a footprint map, a contact CTA.",
+    "risk": "Indistinguishable from the competition by design."
+  },
+  "steer": true
+}
